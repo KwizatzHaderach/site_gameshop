@@ -1,0 +1,175 @@
+/*Estilo 1: resetamos o estilo da página removendo os espaçamentos
+internos e margens e aplicando o box-sizing: border-box.*/
+* {
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+
+/*Estilo 2: estilizamos a tag header aplicando espaçamento, cor de fundo e
+cor para os textos e links, removemos o underline dos links e mudamos a
+exibição*/
+
+header,
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', cursive;
+}
+
+body, input, textarea
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    padding: 16px 0;
+    background-color: #182C61;
+    color: #ecf0f1;
+}
+
+header h1,
+section h2 {
+    font-weight: normal;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 16px;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+/*Estilo 3: criamos a classe container limitando sua largura em 1280px e
+centralizando-o. Com isso o conteúdo do site estará centralizado e o
+ocupará até 1280px desde que o monitor tenha essa resolução na
+largura.*/
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Estilo 4: sobrescrevemos o CSS do container dentro do header para
+usarmos display: flex e os itens do cabeçalho (título e menu) fiquem lado
+a lado.
+Com align-items: center centralizamos o conteúdo na vertical e com
+justify-contente: space-between distribuímos os elementos aplicando
+uma margem igualitária, o título ficará na extrema esquerda e o menu na
+extrema direita.*/
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ESTILO 5 */
+header .container,
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ESTILO 6 */
+.brands-list img {
+    height: 24px;
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+/* ESTILO 7 */
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section {
+    color: #182C61;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+/* ESTILO 8 */
+.store-front {
+    margin-right: 32px;
+}
+
+/* SESSÃO DE CONTATOS */
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FORMULÁRIO */
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+form button {
+    background-color: #182C61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #314e9e;
+}
+
+input:focus, textarea:focus {
+    outline-color: #182C61;
+}
+
+/* SOCIAL LINKS */
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+/* RODAPÉ FOOTER */
+footer {
+    background-color: #182C61;
+    color:#ecf0f1;
+    padding: 16px 0;
+}
